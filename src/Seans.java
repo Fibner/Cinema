@@ -1,6 +1,7 @@
 import java.io.Serializable;
 import java.time.LocalTime;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Seans implements Serializable {
@@ -61,7 +62,7 @@ public class Seans implements Serializable {
         else {
             HashMap<Integer, Boolean> rzadMap = miejsca.get(rzad);
 
-            if (!rzadMap.containsKey(nrMiejsca) || !rzadMap.get(nrMiejsca)) {
+            if (!rzadMap.containsKey(nrMiejsca) || rzadMap.get(nrMiejsca)) {
                 return false;
             }
             else {

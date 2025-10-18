@@ -6,10 +6,10 @@ public class Klient implements Serializable {
     String email;
     int telefon;
     Seans seans;
-    int zarezerwowane_miejsce;
+    String zarezerwowane_miejsce;
 
 
-    public Klient(String nazwisko, String imie, String email, int telefon, Seans seans, int zarezerwowane_miejsce) {
+    public Klient(String nazwisko, String imie, String email, int telefon, Seans seans, String zarezerwowane_miejsce) {
         this.nazwisko = nazwisko;
         this.imie = imie;
         this.email = email;
