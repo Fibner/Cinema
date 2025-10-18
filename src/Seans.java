@@ -31,11 +31,17 @@ public class Seans implements Serializable {
         }
     }
 
-    //gettery i settery
+    //getters
     public String getNazwa() { return nazwa; }
     public LocalDate getDzien() { return dzien; }
     public LocalTime getGodzina() { return godzina; }
     public int getOgraniczeniaWiekowe() { return ograniczeniaWiekowe; }
+
+    //setters
+    public void setNazwa(String nazwa) { this.nazwa = nazwa; }
+    public void setDzien(LocalDate dzien) { this.dzien = dzien; }
+    public void setGodzina(LocalTime godzina) {this.godzina = godzina; }
+    public void setOgraniczeniaWiekowe(int ograniczeniaWiekowe) {this.ograniczeniaWiekowe = ograniczeniaWiekowe; }
 
     public boolean czyWolneMiejsce(char rzad, int nrMiejsca) {
         if (!miejsca.containsKey(rzad)) return false;
