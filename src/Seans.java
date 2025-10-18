@@ -84,6 +84,11 @@ public class Seans implements Serializable {
         }
     }
 
+    @Override
+    public String toString() {
+        return tytul;
+    }
+
     /*public void wyswietlMiejsca() {
         System.out.println("Mapa miejsc: O - wolne, X - zajęte");
         for (int r = 0; r < miejsca.size(); r++) {
