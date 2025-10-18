@@ -22,7 +22,7 @@ public class Seans implements Serializable {
 
     //inicjalizacja miejsc na sali
     private void inicjalizujMiejsca(Character ostatniRzad, Integer miejscaWRzedzie) {
-        for (char r = 'A', r <= ostatniRzad, r++) {
+        for (char r = 'A'; r <= ostatniRzad; r++) {
             HashMap<Integer, Boolean> rzadMap = new HashMap<>();
             for (int m = 1; m <= miejscaWRzedzie; m++) {
                 rzadMap.put(m, false); //false = wolne miejsce
@@ -77,4 +77,6 @@ public class Seans implements Serializable {
             return true;
         }
     }
+
+
 }
