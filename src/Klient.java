@@ -4,32 +4,18 @@ public class Klient {
     String nazwisko;
     String imie;
     String email;
-    Integer telefon;
+    int telefon;
     String seans;
-    Integer zarezerwowane_miejsce;
-
-}
+    int zarezerwowane_miejsce;
 
 
-
-
-
-public class Pracownik implements Serializable {
-    private static final long serialVersionUID = -7887612267521882048L;
-    String imie;
-    String nazwisko;
-    String email;
-
-    public Pracownik(String imie, String nazwisko, String email) {
-        this.imie = imie;
+    public Klient(String nazwisko, String imie, String email, int telefon, String seans, int zarezerwowane_miejsce) {
         this.nazwisko = nazwisko;
+        this.imie = imie;
         this.email = email;
+        this.telefon = telefon;
+        this.seans = seans;
+        this.zarezerwowane_miejsce = zarezerwowane_miejsce;
     }
-
-    @Override
-    public String toString() {
-        return "Pracownik [imie=" + imie + ", nazwisko=" + nazwisko
-                + ", email=" + email + "]";
-    }
-
 }
+
