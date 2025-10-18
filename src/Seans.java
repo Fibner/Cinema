@@ -86,14 +86,7 @@ public class Seans implements Serializable {
 
     @Override
     public String toString() {
-        return tytul;
+        return "Seans [tytul=" + tytul + ", dzien=" + dzien + ", godzina=" + godzina + ", ogranieczeniaWiekowe=" +
+                + ograniczeniaWiekowe + ", miejsca=" + miejsca;
     }
-
-    /*public void wyswietlMiejsca() {
-        System.out.println("Mapa miejsc: O - wolne, X - zajęte");
-        for (int r = 0; r < miejsca.size(); r++) {
-
-        }
-    }*/
-
 }
