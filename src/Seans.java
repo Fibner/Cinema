@@ -5,14 +5,14 @@ import java.util.HashMap;
 
 public class Seans implements Serializable {
 
-    private String nazwa;
+    private String tytul;
     private LocalDate dzien;
     private LocalTime godzina;
     private int ograniczeniaWiekowe;
     private HashMap<Character, HashMap<Integer, Boolean>> miejsca;
 
-    public Seans(String nazwa, LocalDate dzien, LocalTime godzina, int ograniczeniaWiekowe, Character ostatniRzad, Integer miejscaWRzedzie) {
-        this.nazwa = nazwa;
+    public Seans(String tytul, LocalDate dzien, LocalTime godzina, int ograniczeniaWiekowe, Character ostatniRzad, Integer miejscaWRzedzie) {
+        this.tytul = tytul;
         this.dzien = dzien;
         this.godzina = godzina;
         this.ograniczeniaWiekowe = ograniczeniaWiekowe;
@@ -32,13 +32,13 @@ public class Seans implements Serializable {
     }
 
     //getters
-    public String getNazwa() { return nazwa; }
+    public String getTytul() { return tytul; }
     public LocalDate getDzien() { return dzien; }
     public LocalTime getGodzina() { return godzina; }
     public int getOgraniczeniaWiekowe() { return ograniczeniaWiekowe; }
 
     //setters
-    public void setNazwa(String nazwa) { this.nazwa = nazwa; }
+    public void setTytul(String tytul) { this.tytul = tytul; }
     public void setDzien(LocalDate dzien) { this.dzien = dzien; }
     public void setGodzina(LocalTime godzina) {this.godzina = godzina; }
     public void setOgraniczeniaWiekowe(int ograniczeniaWiekowe) {this.ograniczeniaWiekowe = ograniczeniaWiekowe; }
@@ -84,5 +84,11 @@ public class Seans implements Serializable {
         }
     }
 
+    /*public void wyswietlMiejsca() {
+        System.out.println("Mapa miejsc: O - wolne, X - zajęte");
+        for (int r = 0; r < miejsca.size(); r++) {
+
+        }
+    }*/
 
 }
